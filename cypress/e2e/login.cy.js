@@ -16,7 +16,7 @@ describe("Login spec", () => {
     });
   });
   it("should display homepage when email and password are correct", () => {
-    cy.get("input#email").type("dimas@dicoding.com");
+    cy.get("input#email").type("rondo@gmail.com");
     cy.get("input#password").type("123456");
     cy.get("button").contains("Masuk").click();
     cy.url().should("not.include", "/login");
